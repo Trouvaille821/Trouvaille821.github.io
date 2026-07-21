@@ -1,12 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嵌入式实践笔记 · STM32/FreeRTOS</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+    <!-- ====== 导航栏（复用） ====== -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Embedded<span>Lab</span></div>
+            <nav>
+                <a href="index.html" class="active">首页</a>
+                <a href="projects.html">项目</a>
+                <a href="#contact">联系</a>
+            </nav>
+        </div>
+    </header>
 
+    <!-- ====== 个人英雄区 ====== -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi，我是 <span class="highlight">嵌入式开发者</span></h1>
+                <p>专注于 <strong>STM32 · FreeRTOS · 电机 FOC 控制 · 机器人运动</strong></p>
+                <p class="sub-text">这里记录我的项目实战、踩坑笔记与硬件调试心得</p>
+                <a href="projects.html" class="btn">🔍 查看全部项目</a>
+            </div>
+            <!-- 头像或占位图，放 images/avatar.jpg 可替换 -->
+            <div class="hero-image">
+                <img src="images/avatar-placeholder.jpg" alt="嵌入式开发者" onerror="this.style.display='none'">
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 技术栈标签 ====== -->
+    <section class="tech-stack">
+        <div class="container">
+            <h3>🛠️ 常用技术栈</h3>
+            <div class="tags">
+                <span>STM32</span><span>FreeRTOS</span><span>C/C++</span>
+                <span>FOC 电机控制</span><span>机器人运动学</span><span>CAN/SPI/I2C</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 首页项目预览 ====== -->
+    <section class="projects-preview">
+        <div class="container">
+            <h2>📌 最新项目</h2>
+            <div class="project-grid">
+
+                <!-- 卡片 1：带视频的项目 -->
+                <div class="project-card">
+                    <div class="video-wrapper">
+                        <video controls poster="images/cover-motor.jpg">
+                            <source src="videos/motor-demo.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放。
+                        </video>
+                    </div>
+                    <h3>基于 STM32 的 FOC 电机控制</h3>
+                    <p>使用高级定时器与 ADC 注入组实现电流闭环，FreeRTOS 多任务调度。</p>
+                    <a href="projects.html" class="card-link">查看详情 →</a>
+                </div>
+
+                <!-- 卡片 2：图片项目 -->
+                <div class="project-card">
+                    <img src="images/robot.jpg" alt="机器人项目" loading="lazy">
+                    <h3>机器人运动学控制</h3>
+                    <p>CAN 总线同步多电机，实现平滑轨迹插补与姿态控制。</p>
+                    <a href="projects.html" class="card-link">查看详情 →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 页脚 ====== -->
+    <footer>
+        <div class="container">
+            <p>© 2026 嵌入式实践笔记 · 用代码驱动硬件</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
