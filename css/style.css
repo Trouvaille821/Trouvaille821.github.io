@@ -215,3 +215,37 @@ footer {
     nav a { margin-left: 16px; font-size: 0.95rem; }
     .project-grid { grid-template-columns: 1fr; }
 }
+
+/* ===== 联系区 ===== */
+.contact-section {
+    background: #f1f5f9;
+    padding: 60px 0;
+    text-align: center;
+}
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+.contact-section p {
+    color: #475569;
+    margin-bottom: 28px;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.contact-btn {
+    display: inline-block;
+    background: #0f172a;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: transform 0.2s, background 0.2s;
+}
+.contact-btn:hover {
+    background: #1e293b;
+    transform: scale(1.05);
+}
